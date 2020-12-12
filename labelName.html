@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript">
+    function CopyToLabel() {
+        var names = ["Mohsin", "Sam", "Bob","Steve"];
+        var txtName = document.getElementById("txtName");
+        for (var i = 0; i < names.length; i++) {
+            var name = names[i].toString;
+            if(name.toString.contains(txtName)){
+                var lblName = document.getElementById("lblName");
+                lblName.innerHTML = names[i];
+            }
+        }   
+ 
+        
+    }
+</script>
+</head>
+<body>
+<input type="text" id="txtName" onChange="CopyToLabel()"/>
+<label id="lblName" />
+</body>
+
+</html>
